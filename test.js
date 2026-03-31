@@ -12,7 +12,10 @@ connectdb();
 
 //HOME
 app.get('/',(req,res)=>{
-    res.send('Account CRUD operations is running')
+    res.json({
+        message:"Account crude operations is running" ,
+        status:"sucess"
+    })
 })
 
 app.use("/api/",accountRoutes);
