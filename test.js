@@ -14,7 +14,7 @@ connectdb();
 app.get('/',(req,res)=>{
     res.json({
         message:"Account crude operations is running" ,
-        status:"sucess"
+        status:"success"
     })
 })
 
