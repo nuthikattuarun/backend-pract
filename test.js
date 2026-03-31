@@ -12,16 +12,11 @@ app.use(express.json());
 connectdb();
 
 //HOME
-app.get('/',(req,res)=>{
-    res.json({
-        message:"Account crude operations is running" ,
-        status:"success"
-    })
-})
+
 
 app.use("/api/",accountRoutes);
 
-app.use("/info",infoRoutes);
+app.use("/",infoRoutes);
 
 app.listen(process.env.PORT,()=>{
     console.log("server running on port",process.env.PORT)

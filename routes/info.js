@@ -1,11 +1,10 @@
 const express=require("express")
 const router = require.Router();
 
-router.get("/info", (req,res) => {
+router.get("/info", (req, res) => {
     res.json({
-        name:"Arun",
-        role:"Backend Developer",
-        status:"Learning"
+       message:"Account CRUD operations is running",
+       status:successs
     });
 
 });
