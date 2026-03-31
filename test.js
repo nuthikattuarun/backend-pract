@@ -2,6 +2,7 @@ require('dotenv').config();
 const express=require('express');
 const connectdb=require("./config/db");
 const accountRoutes=require('./routes/accountRoutes');
+const infoRoutes=require('./routes/info');
 const app = express();
 
 app.use(express.json());
@@ -19,6 +20,8 @@ app.get('/',(req,res)=>{
 })
 
 app.use("/api/",accountRoutes);
+
+app.use("/",infoRoutes);
 
 app.listen(process.env.PORT,()=>{
     console.log("server running on port",process.env.PORT)
