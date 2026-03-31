@@ -21,7 +21,7 @@ app.get('/',(req,res)=>{
 
 app.use("/api/",accountRoutes);
 
-app.use("/",infoRoutes);
+app.use("/info",infoRoutes);
 
 app.listen(process.env.PORT,()=>{
     console.log("server running on port",process.env.PORT)
