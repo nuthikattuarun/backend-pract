@@ -1,7 +1,7 @@
 const express=require("express")
-const router=require.Router()
+const router = require.Router();
 
-router.get("/info",(req,res)=>{
+router.get("/info", (req,res) => {
     res.json({
         name:"Arun",
         role:"Backend Developer",
@@ -10,4 +10,4 @@ router.get("/info",(req,res)=>{
 
 });
 
-module.exports=router;
+module.exports = router;
